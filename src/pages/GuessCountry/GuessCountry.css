@@ -1,0 +1,59 @@
+.guess-country {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.country-option {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.country-option:hover {
+  background-color: #333;
+  transform: scale(1.05);
+}
+
+.country-flag img {
+  width: 150px; 
+  transition: transform 0.3s;
+}
+
+.scoreboard {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.difficulty-selector {
+  margin-top: 20px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  animation: slideIn 0.5s ease;
+}
+
+.message--success {
+  color: var(--color-success);
+}
+
+.message--error {
+  color: var(--color-error);
+}

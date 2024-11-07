@@ -1,0 +1,20 @@
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: scale(0.9); }
+  50% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.9); }
+}
+
+.message {
+  font-size: var(--font-size-large);
+  margin: 20px 0;
+  opacity: 0;
+  animation: fadeInOut 3s ease-in-out forwards;
+}
+
+.message--success {
+  color: var(--color-success);
+}
+
+.message--error {
+  color: var(--color-error);
+}

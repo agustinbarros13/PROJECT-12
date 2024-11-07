@@ -1,0 +1,44 @@
+@import './styles/variables.css';
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-dark);
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+h1, h2 {
+  font-size: var(--font-size-large);
+}
+
+button {
+  background-color: var(--color-primary);
+  color: var(--color-text-dark);
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+@media (max-width: 768px) {
+  .country-options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .country-option {
+      width: 100%;
+      max-width: 300px;
+      margin: 8px 0;
+  }
+
+  .scoreboard, .difficulty-selector {
+      width: 100%;
+      text-align: center;
+  }
+}

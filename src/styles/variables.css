@@ -1,0 +1,14 @@
+:root {
+  --color-bg-dark: #1a1a1a;
+  --color-bg-light: #f9f9f9;
+  --color-primary: #646cff;
+  --color-primary-hover: #535bf2;
+  --color-success: #4CAF50;
+  --color-error: #FF5252;
+  --color-text-dark: #ffffff;
+  --color-text-light: #213547;
+
+  --font-size-large: 1.5em;
+  --font-size-medium: 1.2em;
+  --font-size-small: 1em;
+}
