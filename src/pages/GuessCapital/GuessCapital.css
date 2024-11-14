@@ -1,0 +1,117 @@
+.guess-capital {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 600px;
+  margin: auto;
+  background: rgba(26, 26, 26, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.country-card {
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  background: var(--color-bg-light);
+  color: var(--color-text-light);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.country-flag {
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+.country-flag:hover {
+  transform: scale(1.1);
+}
+
+.capital-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.capital-option {
+  padding: 10px 20px;
+  font-size: var(--font-size-medium);
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.capital-option.correct {
+  background-color: var(--color-success);
+}
+
+.capital-option.incorrect {
+  background-color: var(--color-error);
+  color: var(--color-text-dark);
+}
+
+.capital-option:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg-dark);
+  transform: scale(1.05);
+}
+
+.message {
+  font-size: var(--font-size-large);
+  font-weight: bold;
+  margin-top: 20px;
+  animation: slideIn 0.5s ease;
+}
+
+.message--success {
+  color: var(--color-success);
+}
+
+.message--error {
+  color: var(--color-error);
+}
+
+.next-question {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: var(--font-size-medium);
+  color: var(--color-bg-dark);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.next-question:hover {
+  background-color: var(--color-primary-hover);
+}
+
+@media (max-width: 600px) {
+  .country-flag {
+    max-width: 100px;
+  }
+  
+  .capital-option {
+    font-size: var(--font-size-small);
+    padding: 8px 12px;
+  }
+}

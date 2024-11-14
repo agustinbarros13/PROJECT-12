@@ -1,23 +1,29 @@
-.header {
+.main-header {
   background-color: var(--color-bg-dark);
-  color: var(--color-text-light);
-  padding: 1.5rem;
+  padding: 15px 20px;
   text-align: center;
-  transition: background-color 0.3s;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
-.header h1 {
-  font-size: var(--font-size-large);
-  margin: 0;
-  color: var(--color-primary);
+.nav-link {
+  margin: 0 10px;
+  padding: 8px 15px;
+  font-size: var(--font-size-medium);
+  color: var(--color-text-dark);
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.header:hover {
-  background-color: #333;
+.nav-link:hover {
+  background-color: var(--color-primary);
+  color: var(--color-bg-dark);
+  transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: var(--font-size-medium);
+@media (max-width: 600px) {
+  .nav-link {
+    font-size: var(--font-size-small);
+    padding: 6px 10px;
   }
 }

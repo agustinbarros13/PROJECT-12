@@ -1,4 +1,3 @@
-// src/components/DifficultySelector.jsx
 import React from 'react';
 
 const DifficultySelector = ({ onChangeDifficulty }) => {

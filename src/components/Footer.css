@@ -1,11 +1,15 @@
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
   background-color: var(--color-bg-dark);
   color: var(--color-text-light);
-  padding: 1rem;
   text-align: center;
   font-size: var(--font-size-small);
-  transition: font-size 0.3s;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
 }
+
 
 .footer p {
   margin: 0;

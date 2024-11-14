@@ -1,4 +1,3 @@
-// src/components/CountryOption.jsx
 import React from 'react';
 
 const CountryOption = ({ country, onSelect }) => {

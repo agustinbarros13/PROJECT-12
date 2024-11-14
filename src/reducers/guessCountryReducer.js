@@ -1,4 +1,3 @@
-// src/reducers/guessCountryReducer.js
 export const initialState = {
   score: 0,
   correct: false,

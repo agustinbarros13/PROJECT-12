@@ -1,4 +1,3 @@
-// src/components/Scoreboard.jsx
 import React from 'react';
 
 const Scoreboard = ({ score, attempts }) => {

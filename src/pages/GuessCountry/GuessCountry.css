@@ -1,59 +1,82 @@
 .guess-country {
   text-align: center;
-  padding: 50px 20px;
+  padding: 60px 20px;
+  color: var(--color-text-light);
+  background-color: var(--color-bg-dark);
+  max-width: 600px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 1s ease;
+  position: relative;
+}
+
+.guess-country .country-card {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.guess-country .country-flag {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.guess-country .country-flag img {
+  max-width: 150px;
+  width: auto;
+  height: auto;
+  transition: transform 0.3s;
+  border-radius: 5px;
+}
+
+.guess-country .country-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 .country-option {
   display: inline-block;
   margin: 10px;
-  padding: 10px;
-  border: 1px solid #444;
-  border-radius: 5px;
+  padding: 5px 5px;
+  border: 2px solid var(--color-primary);
+  border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  min-width: 120px;
+  font-size: var(--font-size-medium);
+  color: var(--color-text-dark);
+  background-color: transparent; 
 }
 
 .country-option:hover {
-  background-color: #333;
+  background-color: var(--color-primary-hover);
   transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.country-flag img {
-  width: 150px; 
-  transition: transform 0.3s;
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--color-text-light);
+  background-color: var(--color-bg-dark);
+  width: 94%;
+  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-.scoreboard {
-  margin-top: 20px;
-  font-size: 1.2rem;
-}
-
-.difficulty-selector {
-  margin-top: 20px;
-}
-
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(50%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.message {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-top: 20px;
-  animation: slideIn 0.5s ease;
-}
-
-.message--success {
-  color: var(--color-success);
-}
-
-.message--error {
-  color: var(--color-error);
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
